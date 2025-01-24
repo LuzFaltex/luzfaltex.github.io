@@ -9,9 +9,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  PR_NUMBER: ${{ github.event.number }}
-
 jobs:
   build:
 
@@ -30,11 +27,11 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish Artifacts
-      run: dotnet publish --configuration ${{ env.CONFIGURATION }} --no-build --output "../Artifacts/${{ PR_NUMBER }}"
+      run: dotnet publish --configuration ${{ env.CONFIGURATION }} --no-build --output "../Artifacts/${{ github.event.number }}"
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.6.0
       with:
         name: "${{ PR_NUMBER }}"
-        path: "../Artifacts/${{ PR_NUMBER }}"
+        path: "../Artifacts/${{ github.event.number }}"
         overwrite: true
       
