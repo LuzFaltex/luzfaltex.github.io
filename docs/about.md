@@ -51,8 +51,9 @@ LuzFaltex (ˈluːz ˈfɔl ˈtɛks) is a game design company founded in 2014. We 
 
     What do we mean by this?
 
-    - Single player games will ship without DRM, only requiring a Steam or GOG account to access.
-    - Multiplayer Online games will require an account to log in and authorize your account. Wherever possible, this access will be federated so you don't rely on us to store your account information.
+    - Paid Single player games will ship without DRM, only requiring a Steam or GOG account to access.
+    - Free Single Player games will ship without DRM, requiring no account to access. Many times, free games will be available on our site or itch.io.
+    - Online Multiplayer games will require an account to log in and authorize your account. We are working on a way to allow federated accounts so you don't rely on us to store your account data.
     - Wherever possible, the code will be open sourced to allow for users to modify and extend support for our software.
       - In the case of actively supported products with a paid license, code may be source-available for those with an active license. This is not the same as open source, but still allows for user contributions, security research (including [Vulnerability Testing]), and preparations by the community for preservation after we can no longer support the game.    
 
